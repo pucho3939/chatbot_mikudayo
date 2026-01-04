@@ -170,4 +170,41 @@ body {
   #header-note.typing {
     color: #aaa;
   }
+
+  /* Mobile: slightly larger touch targets and text */
+  @media (max-width: 480px) {
+    /* ベースを少し大きくして全体を拡大 */
+    body { font-size: 16px; }
+
+    #chat { padding: 14px; }
+
+    .user-bubble,
+    .bot-bubble {
+      font-size: 1.06rem;
+      padding: 0.75rem 1rem;
+      max-width: 85%;
+      line-height: 1.45;
+    }
+
+    .bot-icon {
+      width: 2.6rem;
+      height: 2.6rem;
+      margin-right: 0.6rem;
+    }
+
+    #text {
+      font-size: 1.05rem;
+      padding: 0.9rem 1rem;
+      border-radius: 1.5rem;
+    }
+
+    button {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.1rem;
+    }
+
+    /* 高さの計算が崩れるときのために余白を確保 */
+    form { padding: 10px 12px; }
+  }
   
